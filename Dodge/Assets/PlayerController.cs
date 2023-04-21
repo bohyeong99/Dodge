@@ -30,8 +30,9 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.velocity = newvelocity;
         
     }
-  public void die()
+  public void Die()
     {
+
         gameObject.SetActive(false);
     }
 }
