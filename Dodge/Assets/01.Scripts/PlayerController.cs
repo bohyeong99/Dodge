@@ -34,5 +34,9 @@ public class PlayerController : MonoBehaviour
     {
 
         gameObject.SetActive(false);
+        //씬에 존재하는 게임 매너지타입의 오브젝트를 찾아서 가져오기
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        //가져온 게임매니저 오브젝트의 엔드게임 메서드 실행
+        gameManager.EndGame();
     }
 }
